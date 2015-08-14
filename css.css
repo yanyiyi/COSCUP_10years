@@ -1,0 +1,55 @@
+ body {padding: 0; margin: 0;}
+input{
+    color: #bab7b1;
+    background-color: rgba(255,255,255,0.4);
+    font-size: 18px;
+    border: 1px #FFF dotted;
+    width: 320px;
+} 
+
+input[type="range"]{
+    
+    width: 200px;
+    
+}
+
+#print{
+     position: absolute;
+    bottom:  50px;
+    right: 50px;
+    
+}
+
+
+iframe{
+    width: 100%;
+    max-width: 1123px;
+    height: 750px;
+    border: 0px;
+     margin: 0 auto;
+}
+
+#all{
+     margin: 0 auto;
+    width: 1123px;
+    height: 750px;
+}
+
+input[type="range"]:nth-child(even){
+   width: 100px; 
+}
+ @media print{
+   input {
+     display:none;
+   }
+     
+     iframe{
+       width: 1120px;
+         height: 740px;
+        
+     }
+ }
+
+#cameraC{
+    margin: 0 auto;
+}
