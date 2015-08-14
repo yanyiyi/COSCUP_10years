@@ -16,9 +16,9 @@ function setup() {
   capture = createCapture(VIDEO);
   capture.size(490, 368);
   capture.hide();
-  tName = createInput("你的暱稱/名字").size(200,24);
+  tName = createInput("你的暱稱/名字").size(320,24);
   tName.position(640,232);
-  tSay = createInput("你想說的話").size(200,24);
+  tSay = createInput("你想說的話").size(320,24);
   tSay.position(640,455);
   camX = createSlider(490,720,490);
   camX.position(250,500);
