@@ -7,6 +7,14 @@ input{
     width: 320px;
 } 
 
+button{
+    color: #bab7b1;
+    background-color: rgba(255,255,255,0.4);
+    font-size: 18px;
+    border: 1px #FFF dotted;
+    width: 320px;
+} 
+
 input[type="range"]{
     
     width: 200px;
@@ -49,6 +57,9 @@ input[type="range"]:nth-child(even){
        width: 1120px;
          height: 740px;
         
+     }
+     buttom{
+        display:none; 
      }
  }
 

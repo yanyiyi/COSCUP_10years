@@ -32,6 +32,8 @@ function setup() {
   camOffsetY.position(40,310);
   yearX = createSlider(1,5,5);
   yearX.position(210,700);
+    nBtn = createButton("存下此刻",0);
+    nBtn.position(640,600);
   varX = 0;
 }
 var displayName,displaySay,displayX,displayY,ofX,ofY;
