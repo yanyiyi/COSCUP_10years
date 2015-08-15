@@ -43,7 +43,7 @@ displayY = camY.value();
 ofX = camOffsetX.value();
 ofY = camOffsetY.value();
 imgX = yearX.value();
- image(capture, 150+ofX, 140+ofY, displayX, displayY);
+ image(capture, 150+ofX, 90+ofY, displayX, displayY);
  
  
  switch(imgX) {
