@@ -34,6 +34,7 @@ iframe{
      margin: 0 auto;
     width: 1123px;
     height: 750px;
+    overflow: hidden;
 }
 
 input[type="range"]:nth-child(even){
@@ -54,5 +55,6 @@ input[type="range"]:nth-child(even){
 #cameraC{
     margin: 0 auto;
     position: absolute;
-    
+   bottom: 10%;
+    right: 25%;
 }
