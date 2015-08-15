@@ -1,6 +1,8 @@
 var img;
 var fTitle;
 var tName,tSay,camX,camY,camOffsetX,camOffsetY,yearX,nBtn;
+
+var tag1,tag2,tag3,tag4,tag5;
 function preload() {
   img1 = loadImage("coscup-01.png");
   img2 = loadImage("coscup-02.png");
@@ -23,9 +25,9 @@ function setup() {
   tName.position(640,232);
   tSay = createInput("你想說的話").size(320,24);
   tSay.position(640,455);
-  camX = createSlider(490,720,490);
+  camX = createSlider(490,720,605);
   camX.position(250,500);
-  camY = createSlider(368,480,368);
+  camY = createSlider(368,480,424);
   camY.position(40,285);
   
   camOffsetX = createSlider(-150,150,0);
@@ -34,9 +36,19 @@ function setup() {
   camOffsetY.position(40,310);
   yearX = createSlider(1,7,7);
   yearX.position(210,700);
-    nBtn = createButton("存下此刻",0);
+    nBtn = createButton("Save",0);
     nBtn.position(640,600);
-  varX = 0;
+  tag1 = createElement("span","高矮");
+    tag2 =  createElement("span","寬瘦");
+    tag3 = createElement("span","上下");
+    tag4 = createElement("span","左右");
+    tag5 = createElement("span","年");
+    tag1.position(5,285);
+    tag2.position(215,500);
+    tag3.position(5,310);
+    tag4.position(215,525);
+    tag5.position(188,700);
+    varX = 0;
 }
 var displayName,displaySay,displayX,displayY,ofX,ofY;
 function draw() {
@@ -47,7 +59,7 @@ displayY = camY.value();
 ofX = camOffsetX.value();
 ofY = camOffsetY.value();
 imgX = yearX.value();
- image(capture, 150+ofX, 90+ofY, displayX, displayY);
+image(capture, 350+ofX-displayX/2, 315+ofY-displayY/2, displayX, displayY);
  
  
  switch(imgX) {
@@ -95,7 +107,7 @@ function mousePressed() {
   }
   if (mouseX > 590 && mouseX < 960  && mouseY > 590 && mouseY < 700){ 
       
-    saveCanvas(canvas,'myCanvas'+varX, 'png');
+    saveCanvas(canvas,'COSCUP'+varX+displayName, 'jpg');
     varX++;
   }
 }

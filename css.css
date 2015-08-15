@@ -7,13 +7,7 @@ input{
     width: 320px;
 } 
 
-button{
-    color: #bab7b1;
-    background-color: rgba(255,255,255,0.4);
-    font-size: 18px;
-    border: 1px #FFF dotted;
-    width: 320px;
-} 
+
 
 input[type="range"]{
     
@@ -43,6 +37,7 @@ iframe{
     width: 1173px;
     height: 800px;
     overflow: hidden;
+    position: relative;
 }
 
 input[type="range"]:nth-child(even){
@@ -50,7 +45,7 @@ input[type="range"]:nth-child(even){
 }
  @media print{
    input {
-     display:none;
+     display: none;
    }
      
      iframe{
@@ -58,14 +53,28 @@ input[type="range"]:nth-child(even){
          height: 740px;
         
      }
-     buttom{
-        display:none; 
+     button{
+        display: none; 
+     }
+     
+     span{
+        display: none;
      }
  }
 
 #cameraC{
     margin: 0 auto;
     position: absolute;
-   bottom: 10%;
-    right: 30%;
+   top: 650px;
+    left: 640px;
+    color: #FFF;
+}
+
+button{
+    color: #bab7b1;
+    background-color: #3f9;
+    font-size: 18px;
+    border: 1px #FFF dotted;
+    width: 120px;
+    opacity: 0.5;
 }
