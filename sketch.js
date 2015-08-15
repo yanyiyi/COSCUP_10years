@@ -107,7 +107,7 @@ function mousePressed() {
   }
   if (mouseX > 590 && mouseX < 960  && mouseY > 590 && mouseY < 700){ 
       
-    saveCanvas(canvas,'COSCUP'+varX+displayName, 'jpg');
+    saveCanvas(canvas,'COSCUP10yrs'+displayName+'-'+varX, 'jpg');
     varX++;
   }
 }
