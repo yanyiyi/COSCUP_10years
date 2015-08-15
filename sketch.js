@@ -7,6 +7,7 @@ function preload() {
   img3 = loadImage("coscup-03.png");
   img4 = loadImage("coscup-04.png");
   img5 = loadImage("coscup-05.png");
+
 //  fTitle = loadFont("NotoSansCJKtc-Bold.otf");
 }
 
@@ -63,8 +64,6 @@ imgX = yearX.value();
         break;
    
  }
- 
- 
  
  fill('#545046');
  textSize(28);
