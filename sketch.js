@@ -6,7 +6,9 @@ function preload() {
   img2 = loadImage("coscup-02.png");
   img3 = loadImage("coscup-03.png");
   img4 = loadImage("coscup-04.png");
-  img5 = loadImage("coscup-05.png");
+  img5 = loadImage("coscup-05.png");  
+  img6 = loadImage("coscup-06.png");
+    img7 = loadImage("coscup-07.png");
 
 //  fTitle = loadFont("NotoSansCJKtc-Bold.otf");
 }
@@ -30,7 +32,7 @@ function setup() {
   camOffsetX.position(250,525);
   camOffsetY = createSlider(-50,50,0);
   camOffsetY.position(40,310);
-  yearX = createSlider(1,5,5);
+  yearX = createSlider(1,7,7);
   yearX.position(210,700);
     nBtn = createButton("存下此刻",0);
     nBtn.position(640,600);
@@ -50,21 +52,26 @@ imgX = yearX.value();
  
  switch(imgX) {
     case 1:
-        image(img5, 0, 0);
+        image(img6, 0, 0);
         break;
     case 2:
-        image(img4, 0, 0);
+        image(img7, 0, 0);
         break;
     case 3:
-        image(img3, 0, 0);
+        image(img5, 0, 0);
         break;
     case 4:
-        image(img2, 0, 0);
+        image(img4, 0, 0);
         break;
     case 5:
+        image(img3, 0, 0);
+        break;
+   case 6:
+        image(img2, 0, 0);
+        break;
+    case 7:
         image(img1, 0, 0);
         break;
-   
  }
  
  fill('#545046');
@@ -87,6 +94,7 @@ function mousePressed() {
     fullscreen(!fs);
   }
   if (mouseX > 590 && mouseX < 960  && mouseY > 590 && mouseY < 700){ 
+      
     saveCanvas(canvas,'myCanvas'+varX, 'png');
     varX++;
   }
