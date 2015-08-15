@@ -23,8 +23,8 @@ input[type="range"]{
 
 iframe{
     width: 100%;
-    max-width: 1123px;
-    height: 750px;
+    max-width: 1173px;
+    height: 800px;
     border: 0px;
      margin: 0 auto;
     overflow: hidden;
@@ -32,8 +32,8 @@ iframe{
 
 #all{
      margin: 0 auto;
-    width: 1123px;
-    height: 750px;
+    width: 1173px;
+    height: 800px;
     overflow: hidden;
 }
 
@@ -56,5 +56,5 @@ input[type="range"]:nth-child(even){
     margin: 0 auto;
     position: absolute;
    bottom: 10%;
-    right: 25%;
+    right: 30%;
 }
