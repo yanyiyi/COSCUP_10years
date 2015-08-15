@@ -84,7 +84,7 @@ function mousePressed() {
     var fs = fullScreen();
     fullscreen(!fs);
   }
-  if (mouseX > 1123){ 
+  if (mouseX > 590 && mouseX < 960  && mouseY > 590 && mouseY < 700){ 
     saveCanvas(canvas,'myCanvas'+varX, 'png');
     varX++;
   }
