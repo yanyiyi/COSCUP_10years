@@ -1,4 +1,4 @@
-var img;
+var img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12;
 var fTitle;
 var tName,tSay,camX,camY,camOffsetX,camOffsetY,yearX,nBtn;
 
@@ -8,16 +8,15 @@ function preload() {
   img2 = loadImage("coscup-02.png");
   img3 = loadImage("coscup-03.png");
   img4 = loadImage("coscup-04.png");
-  img5 = loadImage("coscup-05.png");  
-  img6 = loadImage("coscup-06.png");
+  img5 = loadImage("coscup-06.png");  
+  img6 = loadImage("coscup-05.png");
     img7 = loadImage("coscup-07.png");
     img8 = loadImage("coscup-08.png");
      img9 = loadImage("coscup-09.png");
      img10 = loadImage("coscup-10.png");
     img11 = loadImage("coscup-11.png");
     img12 = loadImage("coscup-11.png");
-
-
+ imgBK = loadImage("img_bk-01.png");
 //  fTitle = loadFont("NotoSansCJKtc-Bold.otf");
 }
 
@@ -58,6 +57,7 @@ function setup() {
 }
 var displayName,displaySay,displayX,displayY,ofX,ofY;
 function draw() {
+    
 displayName = tName.value();
 displaySay = tSay.value();
 displayX = camX.value();
