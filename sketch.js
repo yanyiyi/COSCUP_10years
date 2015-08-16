@@ -25,16 +25,15 @@ function setup() {
   capture = createCapture(VIDEO);
   capture.size(490, 368);
   capture.hide();
- tName = createInput("你的暱稱/名字").size(320,24);
-  tName.position(640,232);
-  tSay = createInput("你想說的話").size(320,24);
-  tSay.position(640,455);
-    
+ 
   camX = createSlider(490,720,605);
   camX.position(250,500);
   camY = createSlider(368,480,424);
   camY.position(40,285);
-  
+  tName = createInput("你的暱稱/名字").size(320,24);
+  tName.position(640,232);
+  tSay = createInput("你想說的話").size(320,24);
+  tSay.position(640,455);
   camOffsetX = createSlider(-150,150,0);
   camOffsetX.position(250,525);
   camOffsetY = createSlider(-50,50,0);
