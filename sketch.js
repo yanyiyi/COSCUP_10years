@@ -12,8 +12,11 @@ function preload() {
   img6 = loadImage("coscup-06.png");
     img7 = loadImage("coscup-07.png");
     img8 = loadImage("coscup-08.png");
-     img9 = loadImage("coscup-BOB.png");
-     img10 = loadImage("coscup-RS-01.png");
+     img9 = loadImage("coscup-09.png");
+     img10 = loadImage("coscup-10.png");
+    img11 = loadImage("coscup-11.png");
+    img12 = loadImage("coscup-11.png");
+
 
 //  fTitle = loadFont("NotoSansCJKtc-Bold.otf");
 }
@@ -37,7 +40,7 @@ function setup() {
   camOffsetX.position(250,525);
   camOffsetY = createSlider(-50,50,0);
   camOffsetY.position(40,310);
-  yearX = createSlider(1,10,10);
+  yearX = createSlider(1,12,12);
   yearX.position(210,700);
     nBtn = createButton("Save",0);
     nBtn.position(640,600);
@@ -67,31 +70,37 @@ image(capture, 350+ofX-displayX/2, 315+ofY-displayY/2, displayX, displayY);
  
  switch(imgX) {
     case 1:
-        image(img10, 0, 0);
+        image(img12, 0, 0);
         break;
     case 2:
-        image(img9, 0, 0);
+        image(img11, 0, 0);
         break;
     case 3:
-        image(img8, 0, 0);
+        image(img10, 0, 0);
         break;
     case 4:
-        image(img7, 0, 0);
+        image(img9, 0, 0);
         break;
     case 5:
-        image(img6, 0, 0);
+        image(img8, 0, 0);
         break;
    case 6:
-        image(img5, 0, 0);
+        image(img7, 0, 0);
         break;
     case 7:
-        image(img4, 0, 0);
+        image(img6, 0, 0);
         break;
      case 8:
-        image(img3, 0, 0);
+        image(img5, 0, 0);
      case 9:
-        image(img2, 0, 0);
+        image(img4, 0, 0);
      case 10:
+        image(img3, 0, 0);
+        break;
+    case 11:
+        image(img2, 0, 0);
+        break;
+     case 12:
         image(img1, 0, 0);
         break;
  }
