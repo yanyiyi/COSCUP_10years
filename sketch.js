@@ -11,6 +11,7 @@ function preload() {
   img5 = loadImage("coscup-05.png");  
   img6 = loadImage("coscup-06.png");
     img7 = loadImage("coscup-07.png");
+    img8 = loadImage("coscup-08.png");
 
 //  fTitle = loadFont("NotoSansCJKtc-Bold.otf");
 }
@@ -34,7 +35,7 @@ function setup() {
   camOffsetX.position(250,525);
   camOffsetY = createSlider(-50,50,0);
   camOffsetY.position(40,310);
-  yearX = createSlider(1,7,7);
+  yearX = createSlider(1,8,8);
   yearX.position(210,700);
     nBtn = createButton("Save",0);
     nBtn.position(640,600);
@@ -64,37 +65,40 @@ image(capture, 350+ofX-displayX/2, 315+ofY-displayY/2, displayX, displayY);
  
  switch(imgX) {
     case 1:
-        image(img6, 0, 0);
+        image(img8, 0, 0);
         break;
     case 2:
-        image(img7, 0, 0);
+        image(img6, 0, 0);
         break;
     case 3:
-        image(img5, 0, 0);
+        image(img7, 0, 0);
         break;
     case 4:
-        image(img4, 0, 0);
+        image(img5, 0, 0);
         break;
     case 5:
-        image(img3, 0, 0);
+        image(img4, 0, 0);
         break;
    case 6:
-        image(img2, 0, 0);
+        image(img3, 0, 0);
         break;
     case 7:
+        image(img2, 0, 0);
+        break;
+     case 8:
         image(img1, 0, 0);
         break;
  }
- 
- fill('#545046');
- textSize(28);
- textFont("CSong3HK-Medium");
- text(displayName,640, 190,320,50);
-fill('#2d2b27');
- textSize(21);
- textFont("NotoSansCJKtc-Light");
- text(displaySay,640,270,320,200);
- 
+ if(imgX > 1){
+     fill('#545046');
+     textSize(28);
+     textFont("CSong3HK-Medium");
+     text(displayName,640, 190,320,50);
+    fill('#2d2b27');
+     textSize(21);
+     textFont("NotoSansCJKtc-Light");
+     text(displaySay,640,270,320,200);
+ }
 }
 
 
