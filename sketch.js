@@ -12,8 +12,9 @@ function preload() {
   img6 = loadImage("coscup-06.png");
     img7 = loadImage("coscup-07.png");
     img8 = loadImage("coscup-08.png");
-     img9 = loadImage("coscup-BOB.png");
-     img10 = loadImage("coscup-RS-01.png");
+     img9 = loadImage("coscup-09.png");
+     img10 = loadImage("coscup-10.png");
+    img11 = loadImage("coscup-11.png");
 
 //  fTitle = loadFont("NotoSansCJKtc-Bold.otf");
 }
@@ -24,20 +25,20 @@ function setup() {
   capture = createCapture(VIDEO);
   capture.size(490, 368);
   capture.hide();
-  tName = createInput("你的暱稱/名字").size(320,24);
-  tName.position(640,232);
-  tSay = createInput("你想說的話").size(320,24);
-  tSay.position(640,455);
+ 
   camX = createSlider(490,720,605);
   camX.position(250,500);
   camY = createSlider(368,480,424);
   camY.position(40,285);
-  
+  tName = createInput("你的暱稱/名字").size(320,24);
+  tName.position(640,232);
+  tSay = createInput("你想說的話").size(320,24);
+  tSay.position(640,455);
   camOffsetX = createSlider(-150,150,0);
   camOffsetX.position(250,525);
   camOffsetY = createSlider(-50,50,0);
   camOffsetY.position(40,310);
-  yearX = createSlider(1,10,10);
+  yearX = createSlider(1,11,11);
   yearX.position(210,700);
     nBtn = createButton("Save",0);
     nBtn.position(640,600);
@@ -67,35 +68,42 @@ image(capture, 350+ofX-displayX/2, 315+ofY-displayY/2, displayX, displayY);
  
  switch(imgX) {
     case 1:
-        image(img10, 0, 0);
+        image(img11, 0, 0);
         break;
     case 2:
-        image(img9, 0, 0);
+        image(img10, 0, 0);
         break;
     case 3:
-        image(img8, 0, 0);
+        image(img9, 0, 0);
         break;
     case 4:
-        image(img7, 0, 0);
+        image(img8, 0, 0);
         break;
     case 5:
-        image(img6, 0, 0);
+        image(img7, 0, 0);
         break;
    case 6:
-        image(img5, 0, 0);
+        image(img6, 0, 0);
         break;
     case 7:
-        image(img4, 0, 0);
+        image(img5, 0, 0);
         break;
      case 8:
-        image(img3, 0, 0);
+        image(img4, 0, 0);
      case 9:
-        image(img2, 0, 0);
+        image(img3, 0, 0);
      case 10:
+        image(img2, 0, 0);
+        break;
+     case 11:
         image(img1, 0, 0);
         break;
  }
  if(imgX > 1){
+      tName = createInput("你的暱稱/名字").size(320,24);
+  tName.position(640,232);
+  tSay = createInput("你想說的話").size(320,24);
+  tSay.position(640,455);
      fill('#545046');
      textSize(28);
      textFont("CSong3HK-Medium");
