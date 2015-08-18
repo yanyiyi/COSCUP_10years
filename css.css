@@ -7,6 +7,8 @@ input{
     width: 320px;
 } 
 
+
+
 input[type="range"]{
     
     width: 200px;
@@ -23,16 +25,19 @@ input[type="range"]{
 
 iframe{
     width: 100%;
-    max-width: 1123px;
-    height: 750px;
+    max-width: 1173px;
+    height: 800px;
     border: 0px;
      margin: 0 auto;
+    overflow: hidden;
 }
 
 #all{
      margin: 0 auto;
-    width: 1123px;
-    height: 750px;
+    width: 1173px;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
 }
 
 input[type="range"]:nth-child(even){
@@ -40,7 +45,7 @@ input[type="range"]:nth-child(even){
 }
  @media print{
    input {
-     display:none;
+     display: none;
    }
      
      iframe{
@@ -48,8 +53,28 @@ input[type="range"]:nth-child(even){
          height: 740px;
         
      }
+     button{
+        display: none; 
+     }
+     
+     span{
+        display: none;
+     }
  }
 
 #cameraC{
     margin: 0 auto;
+    position: absolute;
+   top: 650px;
+    left: 640px;
+    color: #FFF;
+}
+
+button{
+    color: #bab7b1;
+    background-color: #3f9;
+    font-size: 18px;
+    border: 1px #FFF dotted;
+    width: 120px;
+    opacity: 0.5;
 }
