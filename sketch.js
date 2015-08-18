@@ -1,4 +1,4 @@
-var img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12;
+var img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,imgBK;
 var fTitle;
 var tName,tSay,camX,camY,camOffsetX,camOffsetY,yearX,nBtn;
 
@@ -15,9 +15,8 @@ function preload() {
      img9 = loadImage("coscup-09.png");
      img10 = loadImage("coscup-10.png");
     img11 = loadImage("coscup-11.png");
-    img12 = loadImage("coscup-11.png");
+    img12 = loadImage("coscup-12.png");
  imgBK = loadImage("img_bk-01.png");
-//  fTitle = loadFont("NotoSansCJKtc-Bold.otf");
 }
 
 function setup() {
@@ -57,7 +56,7 @@ function setup() {
 }
 var displayName,displaySay,displayX,displayY,ofX,ofY;
 function draw() {
-    
+ image(imgBK, 0, 0);   
 displayName = tName.value();
 displaySay = tSay.value();
 displayX = camX.value();
@@ -92,8 +91,10 @@ image(capture, 350+ofX-displayX/2, 315+ofY-displayY/2, displayX, displayY);
         break;
      case 8:
         image(img5, 0, 0);
+          break;
      case 9:
         image(img4, 0, 0);
+          break;
      case 10:
         image(img3, 0, 0);
         break;
@@ -104,7 +105,7 @@ image(capture, 350+ofX-displayX/2, 315+ofY-displayY/2, displayX, displayY);
         image(img1, 0, 0);
         break;
  }
- if(imgX > 1){
+ if(imgX > 5){
      fill('#545046');
      textSize(28);
      textFont("CSong3HK-Medium");
